@@ -1,0 +1,43 @@
+{
+  "name": "uravatar-studio-project",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@chakra-ui/next-js": "^2.1.5",
+    "@chakra-ui/react": "^2.8.1",
+    "@emotion/react": "^11.11.1",
+    "@emotion/styled": "^11.11.0",
+    "@react-three/drei": "^9.88.10",
+    "@react-three/fiber": "^8.15.9",
+    "@types/three": "^0.157.2",
+    "clsx": "^2.0.0",
+    "framer-motion": "^10.16.4",
+    "keen-slider": "^6.8.6",
+    "next": "13.5.6",
+    "react": "^18",
+    "react-dom": "^18",
+    "react-icons": "^4.11.0",
+    "react-parallax-tilt": "^1.7.172",
+    "tailwind-merge": "^1.14.0",
+    "three": "^0.157.0",
+    "url-slug": "^4.0.1",
+    "windups": "^1.2.1"
+  },
+  "devDependencies": {
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "autoprefixer": "^10",
+    "eslint": "^8",
+    "eslint-config-next": "13.5.6",
+    "postcss": "^8",
+    "tailwindcss": "^3",
+    "typescript": "^5"
+  }
+}
