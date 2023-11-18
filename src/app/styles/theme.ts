@@ -41,7 +41,7 @@ export const theme = extendTheme({
           variants: {
             brand: {
               transition: "all 0.2s",
-              bg: "#67C3EA",
+              bg: "brand.500",
               color: "blackAlpha.700",
               shadow: "lg",
               borderWidth: "1px",
