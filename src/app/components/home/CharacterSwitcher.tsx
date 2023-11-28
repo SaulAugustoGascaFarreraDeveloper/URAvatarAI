@@ -9,27 +9,35 @@ const CharacterSwitcher = ({onCharacterChange}: {onCharacterChange: (character: 
 
     const [character,setCharacter] = useState<TCharacter>("romy")
 
-    const onChangeCharacter = (character:TCharacter) => {
-        setCharacter(character)
-        onCharacterChange(character)
-    }
-
-    return (
+    return(
         <Box>
-            <Box display={{base:"none",md:"block"}} position="relative">
+            <Box display={{base:"none",md:'block'}} position={'relative'}>
                 <AvatarsPlaceholders character={character} />
             </Box>
-            <ButtonGroup pl={4} mt={4}
-            mx="auto" size="sm" isAttached variant="outline" >
-                <Button variant={character === "romy" ? "brand" : "outline"} onClick={() => onChangeCharacter("romy")}>
+            <ButtonGroup pl={4} mt={4} mx="auto" size={'sm'} isAttached variant={'outline'}>
+                <Button
+                    variant={character === 'romy' ? "brand" : "outline"}
+
+                    onClick={() => {
+                        setCharacter("romy")
+                        onCharacterChange("romy")
+                    }}
+                >
                     Romy
                 </Button>
-                <Button variant={character === "sacha" ? "brand" : "outline"} onClick={() => onChangeCharacter("sacha")}>
+                <Button
+                    variant={character === 'sacha' ? "brand" : "outline"}
+
+                    onClick={() => {
+                        setCharacter("sacha")
+                        onCharacterChange("sacha")
+                    }}
+                >
                     Sacha
                 </Button>
             </ButtonGroup>
         </Box>
-    );
+    )
 }
  
 export default CharacterSwitcher;

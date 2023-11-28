@@ -2,17 +2,16 @@ import { Flex, FlexProps } from "@chakra-ui/react";
 
 const PageContainer = (props: FlexProps) => {
     return (
-        <Flex 
+        <Flex
 
-            width="100%"
-            maxWidth="container.lg"
+            width={'100%'}
+            maxWidth={'container.lg'}
             flex="1"
             pt={10}
-            flexDirection="column"
-            marginX="auto"
+            flexDirection={'column'}
+            marginX={'auto'}
             px={4}
             {...props}
-        
         />
     );
 }

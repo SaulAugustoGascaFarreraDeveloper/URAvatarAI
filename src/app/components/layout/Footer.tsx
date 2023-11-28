@@ -46,16 +46,22 @@ const FooterComponent = () => {
                     <Stack alignItems="center" direction="row" spacing={4} className="ml-auto">
                             
 
-                            <Text><b>email: </b> felipegasca3@yahoo.com.mx </Text>
+                            <Text fontSize={'sm'}>
+                                <Link href={'/'}>
+                                    Terms and Privacy
+                                </Link>
+                            </Text>
 
-                            <SocialButton href="https://api.whatsapp.com/send?phone=4427513077">
+                            <SocialButton href="https://api.whatsapp.com/send?phone=4425785179">
                                 <FaWhatsapp  />
                             </SocialButton>
 
-                            
+                            <SocialButton href="https://github.com/SaulAugustoGascaFarreraDeveloper?tab=repositories">
+                                <FaGithub  />
+                            </SocialButton>
 
                             <Text display={{base:'none',md:'block'}} fontSize="lg" fontWeight="bold" >
-                                FESSJO.
+                                URAvatar.
                             </Text>
                                 
 

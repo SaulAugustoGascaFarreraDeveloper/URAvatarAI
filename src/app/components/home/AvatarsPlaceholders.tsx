@@ -10,7 +10,7 @@ function AvatarsPlaceholders({character}: Props) {
     <div>
         <AvatarThumbnail  src={`/prompts/${character}/dataset/1.png`}  transform="rotate(10deg)" />
         <AvatarThumbnail src={`/prompts/${character}/dataset/2.png`} 
-        left="80px" top="40px"  transform="rotate(-4deg)" position="absolute" />
+        left="80px" top="40px"  transform="rotate(-4deg)" position="absolute" display={{base:'none',md:'block'}}  />
         <AvatarThumbnail src={`/prompts/${character}/dataset/3.png`} transform="rotate(-5deg)"/>
     </div>
   )

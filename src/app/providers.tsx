@@ -4,6 +4,11 @@
 import { CacheProvider } from '@chakra-ui/next-js'
 import { ChakraProvider } from '@chakra-ui/react'
 import { theme } from './styles/theme'
+import {SessionProvider} from "next-auth/react"
+import {QueryClient, QueryClientProvider} from "react-query"
+
+
+const queryClient = new QueryClient()
 
 export function Providers({ 
     children 
@@ -13,7 +18,13 @@ export function Providers({
   return (
     
       <ChakraProvider theme={theme}>
-        {children}
+        <SessionProvider>
+            <QueryClientProvider client={queryClient}>
+                  {children}
+            </QueryClientProvider>
+            
+        </SessionProvider>
+        
       </ChakraProvider>
     
   )

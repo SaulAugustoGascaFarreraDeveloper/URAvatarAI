@@ -8,7 +8,7 @@ import Image from "next/image";
 interface TiltImageProps{
     character: TCharacter
     slug: string
-    size: number
+    size?: number
 }
 
 const TiltImage = ({character,slug,size}:TiltImageProps) => {
@@ -29,8 +29,8 @@ const TiltImage = ({character,slug,size}:TiltImageProps) => {
                     style={{borderRadius: 10}}
                     src={`/prompts/${character}/${slug}.png`}
                     alt={slug}
-                    width="512"
-                    height="512"
+                    width={size}
+                    height={size}
                     unoptimized
 
                 />

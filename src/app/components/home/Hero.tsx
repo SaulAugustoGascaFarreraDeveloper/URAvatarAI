@@ -49,7 +49,7 @@ const Hero = () => {
                 </VStack>
 
                 <Flex alignItems="center">
-                    The demo component will be used here
+                   <Demo />
                 </Flex>
 
             </SimpleGrid>
